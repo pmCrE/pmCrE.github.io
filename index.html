@@ -1,22 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <title>Список файлов</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pm's ymm4 template collection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        ul { list-style-type: none; padding: 0; }
-        li { margin-bottom: 10px; }
-        a { text-decoration: none; color: #0366d6; }
-        a:hover { text-decoration: underline; }
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6; /* Светло-серый фон */
+            color: #333; /* Темный текст */
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Выравнивание по верху */
+            min-height: 100vh;
+            padding-top: 50px; /* Отступ сверху */
+        }
+
+        .container {
+            background-color: #ffffff; /* Белый фон для контента */
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Мягкая тень */
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center; /* Центрируем заголовок */
+        }
+
+        h1 {
+            color: #2c3e50; /* Темно-синий заголовок */
+            margin-bottom: 30px;
+            font-size: 2.2em;
+            font-weight: 700;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            background-color: #e8f4f8; /* Очень светло-синий фон для каждого элемента */
+            margin-bottom: 12px;
+            padding: 15px 20px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            text-align: left; /* Текст внутри элемента выравниваем по левому краю */
+        }
+
+        li:hover {
+            background-color: #dbe9ed; /* Немного темнее при наведении */
+            transform: translateY(-3px); /* Легкий эффект поднятия */
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff; /* Синий цвет ссылки */
+            font-weight: 500;
+            display: block; /* Ссылка занимает всю ширину элемента списка */
+        }
+
+        a:hover {
+            color: #0056b3; /* Темнее синий при наведении */
+        }
+
+        /* Адаптивность для маленьких экранов */
+        @media (max-width: 768px) {
+            .container {
+                padding: 25px;
+                margin: 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+        }
     </style>
 </head>
 <body>
-    <h1>Файлы в этой директории:</h1>
-    <ul>
-        <li><a href="file1.txt">file1.txt</a></li>
-        <li><a href="document.pdf">document.pdf</a></li>
-        <li><a href="image.jpg">image.jpg</a></li>
-        <li><a href="another_folder/subfile.txt">another_folder/subfile.txt</a></li>
+    <div class="container">
+        <h1>files in this directory</h1>
+        <ul>
+            <li><a href="11.ymmt">11.ymmt</a></li>
+            <li><a href="asdasd.ymmt">asdasd.ymmt</a></li>
+            <li><a href="moc.ymmt">moc.ymmt</a></li>
+            <li><a href="win7-8.ymmt">win7-8.ymmt</a></li>
+            <li><a href="win10.ymmt">win10.ymmt</a></li>
+            <li><a href="Win1022H2_Notifi.ymmt">Win1022H2_Notifi.ymmt</a></li>
+            <li><a href="Windows 10 Autoplay.ymmt">Windows 10 Autoplay.ymmt</a></li>
+            <li><a href="windows10074appnexit.ymmt">windows10074appnexit.ymmt</a></li>
+            <li><a href="карзин.ymmt">карзин.ymmt</a></li>
         </ul>
+    </div>
 </body>
 </html>
